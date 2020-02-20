@@ -7,7 +7,7 @@ RUN cd ~/tools \
 
 # Install dotfiles
 RUN cd ~/tools \
-    && git clone --depth 1 https://github.com/l4cr0ss/dotfiles.git \
+    && git clone https://github.com/l4cr0ss/dotfiles.git \
     && bash ~/tools/dotfiles/init.sh
 
 RUN echo 'export PS1="[\[\e[34m\]\u\[\e[0m\]@\[\e[33m\]\H\[\e[0m\]:\w]\$ "' >> /root/.bashrc
