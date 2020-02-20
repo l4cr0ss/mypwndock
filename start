@@ -4,8 +4,8 @@ docker run --rm --detach --privileged -it \
 	--net=host \
 	-v $(pwd):/mnt \
 	-v $HOME/code:/root/code \
-	--hostname gpwn \
-	--name gpwn \
-	gpwn \
+	--hostname l4pwn \
+	--name l4pwn \
+	l4pwn \
 	bash \
     && echo "[+] Started"
